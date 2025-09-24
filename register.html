@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+      <link rel="icon" href="icon.png" type="image/jpeg">
+
+  <style>
+    body {
+      background-image: url('backgroundimg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+    }
+
+    fieldset {
+      width: 600px;
+      margin: 80px auto;
+      padding: 20px;
+      border-radius: 50px;
+      background-color: rgba(55,133,59,0.9);
+      color: #fff;
+    }
+
+    legend {
+      font-size: 24px;
+      padding: 0 10px;
+      position: fixed;
+      top: 30px;
+      left: 650px;
+
+    }
+
+    .form-group {
+      margin: 15px 0;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"],
+    .form-group input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .form-group input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background-color: #fff;
+      color: #37853b;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #eee;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .login-link a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <fieldset>
+    <legend>Register New User</legend>
+    <form>
+      <br>
+      <br>
+      <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter Username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+      </div>
+
+      <div class="form-group">
+  <label>Register As:</label><br>
+
+  <input type="radio" id="admin" name="role" value="Admin" required>
+  <label for="admin">Admin</label><br>
+
+  <input type="radio" id="farmer" name="role" value="Farmer">
+  <label for="farmer">Farmer</label><br>
+
+  <input type="radio" id="expert" name="role" value="Agriculture Expert">
+  <label for="expert">Agriculture Expert</label><br>
+
+  <input type="radio" id="public" name="role" value="Public">
+  <label for="public">Public</label>
+</div>
+
+
+      <button type="submit" class="btn">Register</button>
+
+      <div class="login-link">
+        Already have an account? <a href="login.html">Login Here</a>
+      </div>
+
+    </form>
+  </fieldset>
+
+</body>
+</html>

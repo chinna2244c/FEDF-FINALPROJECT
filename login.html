@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="icon.png" type="image/jpeg">
+    <style>
+        body {
+      background-image: url('backgroundimg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      opacity: 50px;
+    }
+        fieldset{
+            width: 400px;
+            height: 500px;
+            position: fixed;
+            left: 515px;
+            top: 10px;
+            border-radius: 50px;
+            box-shadow: 50px;
+            background-color: rgba(55,133,59,0.9);
+
+        }
+        legend{
+            position: fixed;
+            left: 699px;
+
+        }
+        loginbutton{
+            position: fixed;
+            left: 699px;
+            border-radius: 50px;
+        }
+        a{
+            text-decoration: none;
+        }
+        noacc{
+            text-align: center;
+        }
+        myin{
+            position: fixed;
+            left: 605px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Login</h1></legend><br/><br/><br/><br/><br/>
+        <form>
+            <p>Username:
+            <input type="text" placeholder="Enter Username" required></p>
+
+            <p>Password
+               <myin> <input type="password" placeholder="Enter Password" required></myin>
+            </p>
+            <p>Login As:</p>
+            <input type="radio">Admin
+            <br>
+            <input type="radio">Farmer
+            <br>
+            <input type="radio">Agriculture Expert
+            <br>
+            <input type="radio">Public
+
+            <br/><br/><br/>
+            <loginbutton><button>Login</button></loginbutton><br/><br/>
+            <noacc><p>Don't Have an Account?<a href="register.html">Register</a></noacc>
+        </form>
+    </fieldset>
+</body>
+</html>
